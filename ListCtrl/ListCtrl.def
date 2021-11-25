@@ -1,0 +1,18 @@
+; ListCtrl.def : Declares the module parameters for the DLL.
+
+LIBRARY      "ListCtrl"
+
+EXPORTS
+    ; Explicit exports can go here
+    irPlg_Object_CreateObject
+	irPlg_Object_DeleteObject
+	irPlg_GetPluginName
+	irPlg_GetPluginVersion
+	irPlg_GetPluginActionXML
+	irPlg_ShowHelpForAction
+	irPlg_ShowHelpForPlugin
+	irPlg_ValidateLicense
+	irPlg_GetLuaVersion
+	irPlg_GetAuthorInfo
+	irPlg_GetIRPluginObjectVersion
+	irPlg_GetSDKVersion

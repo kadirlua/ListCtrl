@@ -1,0 +1,3276 @@
+<ActionTemplates>
+	<Action>
+      <Name>ListCtrl.InsertItem</Name>
+      <Description>Inserts the row of a ListCtrl object.</Description>
+      <ReturnValueType>number</ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>ObjectName</Name>
+        <Description>The name of the object.</Description>
+        <Type>string</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default></Default>
+          <DataType>pluginobject</DataType>
+          <Constraints>IR_LISTCTRL_OBJECT</Constraints>
+        </EasyMode>
+      </Arg>
+      <Arg>
+        <Name>Item</Name>
+        <Description>The item number.</Description>
+        <Type>number</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>0</Default>
+          <DataType>number</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+      <Arg>
+        <Name>Text</Name>
+        <Description>The item text.</Description>
+        <Type>string</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>"New Item"</Default>
+          <DataType>string</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.InsertColumn</Name>
+      <Description>Inserts the column of a ListCtrl object.</Description>
+      <ReturnValueType>number</ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>ObjectName</Name>
+        <Description>The name of the object.</Description>
+        <Type>string</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default></Default>
+          <DataType>pluginobject</DataType>
+          <Constraints>IR_LISTCTRL_OBJECT</Constraints>
+        </EasyMode>
+      </Arg>
+      <Arg>
+        <Name>Column</Name>
+        <Description>The column number.</Description>
+        <Type>number</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>0</Default>
+          <DataType>number</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+      <Arg>
+        <Name>Header</Name>
+        <Description>The column header of the column.</Description>
+        <Type>string</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>"New Header"</Default>
+          <DataType>string</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+      <Arg>
+        <Name>Format</Name>
+        <Description>The column format.</Description>
+        <Type>number</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>0</Default>
+          <DataType>number</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+      <Arg>
+        <Name>Width</Name>
+        <Description>The column width.</Description>
+        <Type>number</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>-1</Default>
+          <DataType>number</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+      <Arg>
+        <Name>SubItem</Name>
+        <Description>The column subitem.</Description>
+        <Type>number</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>-1</Default>
+          <DataType>number</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+    <Action>
+      <Name>ListCtrl.SetRedraw</Name>
+      <Description>Sets the redraw all items of a ListCtrl object.</Description>
+      <ReturnValueType></ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>ObjectName</Name>
+        <Description>The name of the object.</Description>
+        <Type>string</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default></Default>
+          <DataType>pluginobject</DataType>
+          <Constraints>IR_LISTCTRL_OBJECT</Constraints>
+        </EasyMode>
+      </Arg>
+      <Arg>
+        <Name>Redraw</Name>
+        <Description>The redraw state.</Description>
+        <Type>boolean</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>true</Default>
+          <DataType>boolean</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.SetItemText</Name>
+      <Description>Sets the item text of a ListCtrl object.</Description>
+      <ReturnValueType></ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>ObjectName</Name>
+        <Description>The name of the object.</Description>
+        <Type>string</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default></Default>
+          <DataType>pluginobject</DataType>
+          <Constraints>IR_LISTCTRL_OBJECT</Constraints>
+        </EasyMode>
+      </Arg>
+      <Arg>
+        <Name>Item</Name>
+        <Description>The item number.</Description>
+        <Type>number</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>0</Default>
+          <DataType>number</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+	  <Arg>
+        <Name>SubItem</Name>
+        <Description>The subitem number.</Description>
+        <Type>number</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>0</Default>
+          <DataType>number</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+	  <Arg>
+        <Name>Text</Name>
+        <Description>The item text.</Description>
+        <Type>string</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>"New Text"</Default>
+          <DataType>string</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.SetFocus</Name>
+      <Description>Sets the focus of a ListCtrl object.</Description>
+      <ReturnValueType></ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>ObjectName</Name>
+        <Description>The name of the object.</Description>
+        <Type>string</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default></Default>
+          <DataType>pluginobject</DataType>
+          <Constraints>IR_LISTCTRL_OBJECT</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.DeleteAllItems</Name>
+      <Description>Deletes the all items of a ListCtrl object.</Description>
+      <ReturnValueType>boolean</ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>ObjectName</Name>
+        <Description>The name of the object.</Description>
+        <Type>string</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default></Default>
+          <DataType>pluginobject</DataType>
+          <Constraints>IR_LISTCTRL_OBJECT</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.DeleteColumn</Name>
+      <Description>Deletes the column of a ListCtrl object.</Description>
+      <ReturnValueType>boolean</ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>ObjectName</Name>
+        <Description>The name of the object.</Description>
+        <Type>string</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default></Default>
+          <DataType>pluginobject</DataType>
+          <Constraints>IR_LISTCTRL_OBJECT</Constraints>
+        </EasyMode>
+      </Arg>
+	  <Arg>
+        <Name>Column</Name>
+        <Description>The column number.</Description>
+        <Type>number</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>0</Default>
+          <DataType>number</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.DeleteItem</Name>
+      <Description>Deletes the item of a ListCtrl object.</Description>
+      <ReturnValueType>boolean</ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>ObjectName</Name>
+        <Description>The name of the object.</Description>
+        <Type>string</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default></Default>
+          <DataType>pluginobject</DataType>
+          <Constraints>IR_LISTCTRL_OBJECT</Constraints>
+        </EasyMode>
+      </Arg>
+	  <Arg>
+        <Name>Item</Name>
+        <Description>The item number.</Description>
+        <Type>number</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>0</Default>
+          <DataType>number</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+    <Action>
+      <Name>ListCtrl.GetItemCount</Name>
+      <Description>Gets the count of the ListCtrl object's items.</Description>
+      <ReturnValueType>number</ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>ObjectName</Name>
+        <Description>The name of the object.</Description>
+        <Type>string</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default></Default>
+          <DataType>pluginobject</DataType>
+          <Constraints>IR_LISTCTRL_OBJECT</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.GetColumnCount</Name>
+      <Description>Gets the count of the ListCtrl object's columns.</Description>
+      <ReturnValueType>number</ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>ObjectName</Name>
+        <Description>The name of the object.</Description>
+        <Type>string</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default></Default>
+          <DataType>pluginobject</DataType>
+          <Constraints>IR_LISTCTRL_OBJECT</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.GetColumnData</Name>
+      <Description>Gets the data of the ListCtrl object's column.</Description>
+      <ReturnValueType>number</ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>ObjectName</Name>
+        <Description>The name of the object.</Description>
+        <Type>string</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default></Default>
+          <DataType>pluginobject</DataType>
+          <Constraints>IR_LISTCTRL_OBJECT</Constraints>
+        </EasyMode>
+      </Arg>
+	  <Arg>
+        <Name>Column</Name>
+        <Description>The column number.</Description>
+        <Type>number</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>0</Default>
+          <DataType>number</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.GetColumnOrder</Name>
+      <Description>Gets column position in the ListCtrl object's display order array.</Description>
+      <ReturnValueType>number</ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>ObjectName</Name>
+        <Description>The name of the object.</Description>
+        <Type>string</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default></Default>
+          <DataType>pluginobject</DataType>
+          <Constraints>IR_LISTCTRL_OBJECT</Constraints>
+        </EasyMode>
+      </Arg>
+	  <Arg>
+        <Name>Column</Name>
+        <Description>The column number.</Description>
+        <Type>number</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>0</Default>
+          <DataType>number</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.SetColumnOrder</Name>
+      <Description>Sets column position in the ListCtrl object's display order array.</Description>
+      <ReturnValueType></ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>ObjectName</Name>
+        <Description>The name of the object.</Description>
+        <Type>string</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default></Default>
+          <DataType>pluginobject</DataType>
+          <Constraints>IR_LISTCTRL_OBJECT</Constraints>
+        </EasyMode>
+      </Arg>
+	  <Arg>
+        <Name>Column</Name>
+        <Description>The column number.</Description>
+        <Type>number</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>0</Default>
+          <DataType>number</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+	  <Arg>
+        <Name>Order</Name>
+        <Description>The order number to set position.</Description>
+        <Type>number</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>0</Default>
+          <DataType>number</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.GetColumnWidth</Name>
+      <Description>Gets the width of the ListCtrl object's width.</Description>
+      <ReturnValueType>number</ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>ObjectName</Name>
+        <Description>The name of the object.</Description>
+        <Type>string</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default></Default>
+          <DataType>pluginobject</DataType>
+          <Constraints>IR_LISTCTRL_OBJECT</Constraints>
+        </EasyMode>
+      </Arg>
+	  <Arg>
+        <Name>Column</Name>
+        <Description>The column number.</Description>
+        <Type>number</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>0</Default>
+          <DataType>number</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.GetColumnHeading</Name>
+      <Description>Gets the heading of the ListCtrl object's column.</Description>
+      <ReturnValueType>string</ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>ObjectName</Name>
+        <Description>The name of the object.</Description>
+        <Type>string</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default></Default>
+          <DataType>pluginobject</DataType>
+          <Constraints>IR_LISTCTRL_OBJECT</Constraints>
+        </EasyMode>
+      </Arg>
+	  <Arg>
+        <Name>Column</Name>
+        <Description>The column number.</Description>
+        <Type>number</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>0</Default>
+          <DataType>number</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.GetItemText</Name>
+      <Description>Gets the text of the ListCtrl object's item.</Description>
+      <ReturnValueType>string</ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>ObjectName</Name>
+        <Description>The name of the object.</Description>
+        <Type>string</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default></Default>
+          <DataType>pluginobject</DataType>
+          <Constraints>IR_LISTCTRL_OBJECT</Constraints>
+        </EasyMode>
+      </Arg>
+	  <Arg>
+        <Name>Item</Name>
+        <Description>The item number.</Description>
+        <Type>number</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>0</Default>
+          <DataType>number</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+	  <Arg>
+        <Name>SubItem</Name>
+        <Description>The subitem number.</Description>
+        <Type>number</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>0</Default>
+          <DataType>number</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.GetFocusCell</Name>
+      <Description>Gets the focus cell of the ListCtrl object.</Description>
+      <ReturnValueType>number</ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>ObjectName</Name>
+        <Description>The name of the object.</Description>
+        <Type>string</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default></Default>
+          <DataType>pluginobject</DataType>
+          <Constraints>IR_LISTCTRL_OBJECT</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.GetFocusRow</Name>
+      <Description>Gets the focus row of the ListCtrl object.</Description>
+      <ReturnValueType>number</ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>ObjectName</Name>
+        <Description>The name of the object.</Description>
+        <Type>string</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default></Default>
+          <DataType>pluginobject</DataType>
+          <Constraints>IR_LISTCTRL_OBJECT</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.GetHotItem</Name>
+      <Description>Gets the hot item of the ListCtrl object.</Description>
+      <ReturnValueType>number</ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>ObjectName</Name>
+        <Description>The name of the object.</Description>
+        <Type>string</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default></Default>
+          <DataType>pluginobject</DataType>
+          <Constraints>IR_LISTCTRL_OBJECT</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.SetCheckBoxOnHeader</Name>
+      <Description>Creates the checkbox object on the ListCtrl object's header control.</Description>
+      <ReturnValueType></ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>ObjectName</Name>
+        <Description>The name of the object.</Description>
+        <Type>string</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default></Default>
+          <DataType>pluginobject</DataType>
+          <Constraints>IR_LISTCTRL_OBJECT</Constraints>
+        </EasyMode>
+      </Arg>
+	  <Arg>
+        <Name>Column</Name>
+        <Description>The column number.</Description>
+        <Type>number</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>0</Default>
+          <DataType>number</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.GetCheck</Name>
+      <Description>Gets the check state of the ListCtrl object's item.</Description>
+      <ReturnValueType>boolean</ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>ObjectName</Name>
+        <Description>The name of the object.</Description>
+        <Type>string</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default></Default>
+          <DataType>pluginobject</DataType>
+          <Constraints>IR_LISTCTRL_OBJECT</Constraints>
+        </EasyMode>
+      </Arg>
+	  <Arg>
+        <Name>Item</Name>
+        <Description>The item number.</Description>
+        <Type>number</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>0</Default>
+          <DataType>number</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.SetCheck</Name>
+      <Description>Sets the check state of the ListCtrl object's item.</Description>
+      <ReturnValueType></ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>ObjectName</Name>
+        <Description>The name of the object.</Description>
+        <Type>string</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default></Default>
+          <DataType>pluginobject</DataType>
+          <Constraints>IR_LISTCTRL_OBJECT</Constraints>
+        </EasyMode>
+      </Arg>
+	  <Arg>
+        <Name>Item</Name>
+        <Description>The item number.</Description>
+        <Type>number</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>0</Default>
+          <DataType>number</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+	  <Arg>
+        <Name>Check</Name>
+        <Description>The check state.</Description>
+        <Type>boolean</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>true</Default>
+          <DataType>boolean</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.SetCheckAllItems</Name>
+      <Description>Sets the check state of the ListCtrl object's all items.</Description>
+      <ReturnValueType></ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>ObjectName</Name>
+        <Description>The name of the object.</Description>
+        <Type>string</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default></Default>
+          <DataType>pluginobject</DataType>
+          <Constraints>IR_LISTCTRL_OBJECT</Constraints>
+        </EasyMode>
+      </Arg>
+	  <Arg>
+        <Name>Check</Name>
+        <Description>The check state.</Description>
+        <Type>boolean</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>true</Default>
+          <DataType>boolean</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.SetColumnWidthAuto</Name>
+      <Description>Sets the column's width auto of the ListCtrl object.</Description>
+      <ReturnValueType></ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>ObjectName</Name>
+        <Description>The name of the object.</Description>
+        <Type>string</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default></Default>
+          <DataType>pluginobject</DataType>
+          <Constraints>IR_LISTCTRL_OBJECT</Constraints>
+        </EasyMode>
+      </Arg>
+	  <Arg>
+        <Name>Column</Name>
+        <Description>The column number.</Description>
+        <Type>number</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>0</Default>
+          <DataType>number</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+	  <Arg>
+        <Name>IncludeHeader</Name>
+        <Description>set true to include header of the column.</Description>
+        <Type>boolean</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>true</Default>
+          <DataType>boolean</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.InsertColumnTrait</Name>
+      <Description>Inserts the column trait of a ListCtrl object.</Description>
+      <ReturnValueType>number</ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>ObjectName</Name>
+        <Description>The name of the object.</Description>
+        <Type>string</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default></Default>
+          <DataType>pluginobject</DataType>
+          <Constraints>IR_LISTCTRL_OBJECT</Constraints>
+        </EasyMode>
+      </Arg>
+      <Arg>
+        <Name>Column</Name>
+        <Description>The column number.</Description>
+        <Type>number</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>0</Default>
+          <DataType>number</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+      <Arg>
+        <Name>Header</Name>
+        <Description>The column header of the column.</Description>
+        <Type>string</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>"New Header"</Default>
+          <DataType>string</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+      <Arg>
+        <Name>Format</Name>
+        <Description>The column format.</Description>
+        <Type>number</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>0</Default>
+          <DataType>number</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+      <Arg>
+        <Name>Width</Name>
+        <Description>The column width.</Description>
+        <Type>number</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>-1</Default>
+          <DataType>number</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+      <Arg>
+        <Name>SubItem</Name>
+        <Description>The column subitem.</Description>
+        <Type>number</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>-1</Default>
+          <DataType>number</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+	  <Arg>
+        <Name>pTrait</Name>
+        <Description>The pointer trait.</Description>
+        <Type>number</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>pTrait</Default>
+          <DataType>number</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.GetColumnTrait</Name>
+      <Description>Gets the column trait of a ListCtrl object.</Description>
+      <ReturnValueType DefaultName="pTraitColumn">number</ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>ObjectName</Name>
+        <Description>The name of the object.</Description>
+        <Type>string</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default></Default>
+          <DataType>pluginobject</DataType>
+          <Constraints>IR_LISTCTRL_OBJECT</Constraints>
+        </EasyMode>
+      </Arg>
+      <Arg>
+        <Name>Column</Name>
+        <Description>The column number.</Description>
+        <Type>number</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>0</Default>
+          <DataType>number</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.CreateComboTrait</Name>
+      <Description>Creates the column trait of the ListCtrl object.</Description>
+      <ReturnValueType DefaultName="pTraitCombo">number</ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>bDroplist</Name>
+        <Description>set true for dropdown list.</Description>
+        <Type>boolean</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>true</Default>
+          <DataType>boolean</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.ComboTraitAddItem</Name>
+      <Description>Adds the item of the column trait.</Description>
+      <ReturnValueType></ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>pTraitCombo</Name>
+        <Description>the trait value.</Description>
+        <Type>number</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>pTraitCombo</Default>
+          <DataType>number</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+	  <Arg>
+        <Name>nItemData</Name>
+        <Description>the item data value.</Description>
+        <Type>number</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>0</Default>
+          <DataType>number</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+	  <Arg>
+        <Name>Text</Name>
+        <Description>the text value.</Description>
+        <Type>string</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>"New Value"</Default>
+          <DataType>string</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.ComboTraitSetMaxItems</Name>
+      <Description>Sets the max items of the column trait.</Description>
+      <ReturnValueType></ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>pTraitCombo</Name>
+        <Description>the trait value.</Description>
+        <Type>number</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>pTraitCombo</Default>
+          <DataType>number</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+	  <Arg>
+        <Name>MaxItems</Name>
+        <Description>the max item number.</Description>
+        <Type>number</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>7</Default>
+          <DataType>number</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.ComboTraitSetSingleClickEdit</Name>
+      <Description>Sets the single click edit of the column trait.</Description>
+      <ReturnValueType></ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>pTraitCombo</Name>
+        <Description>the trait value.</Description>
+        <Type>number</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>pTraitCombo</Default>
+          <DataType>number</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+	  <Arg>
+        <Name>SingleClick</Name>
+        <Description>set true to first click edit.</Description>
+        <Type>boolean</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>false</Default>
+          <DataType>boolean</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.ComboTraitSetShowDropDown</Name>
+      <Description>Sets the drop down property of the column trait.</Description>
+      <ReturnValueType></ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>pTraitCombo</Name>
+        <Description>the trait value.</Description>
+        <Type>number</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>pTraitCombo</Default>
+          <DataType>number</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+	  <Arg>
+        <Name>bShow</Name>
+        <Description>set true to show drop down on the combo trait.</Description>
+        <Type>boolean</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>true</Default>
+          <DataType>boolean</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.ComboClearFixedItems</Name>
+      <Description>Clears the fixed items of the column trait.</Description>
+      <ReturnValueType></ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>pTraitCombo</Name>
+        <Description>the trait value.</Description>
+        <Type>number</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>pTraitCombo</Default>
+          <DataType>number</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.CreateMultilineEditTrait</Name>
+      <Description>Creates the multiline edit trait of the ListCtrl object.</Description>
+      <ReturnValueType DefaultName="pTraitMultilineEdit">number</ReturnValueType>
+      <Arguments>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.MultilineEditTraitGetLimitText</Name>
+      <Description>Gets the limit text of the multiline edit trait.</Description>
+      <ReturnValueType>number</ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>pTraitMultilineEdit</Name>
+        <Description>the trait value.</Description>
+        <Type>number</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>pTraitMultilineEdit</Default>
+          <DataType>number</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.MultilineEditTraitGetMaxLines</Name>
+      <Description>Gets the max lines number of the multiline edit trait.</Description>
+      <ReturnValueType>number</ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>pTraitMultilineEdit</Name>
+        <Description>the trait value.</Description>
+        <Type>number</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>pTraitMultilineEdit</Default>
+          <DataType>number</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.MultilineEditTraitSetSingleClickEdit</Name>
+      <Description>Sets single click edit for the multiline edit trait.</Description>
+      <ReturnValueType></ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>pTraitMultilineEdit</Name>
+        <Description>the trait value.</Description>
+        <Type>number</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>pTraitMultilineEdit</Default>
+          <DataType>number</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+	  <Arg>
+        <Name>SingleClick</Name>
+        <Description>the single click status.</Description>
+        <Type>boolean</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>false</Default>
+          <DataType>boolean</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.MultilineEditTraitSetLimitText</Name>
+      <Description>Sets the limit text for the multiline edit trait.</Description>
+      <ReturnValueType></ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>pTraitMultilineEdit</Name>
+        <Description>the trait value.</Description>
+        <Type>number</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>pTraitMultilineEdit</Default>
+          <DataType>number</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+	  <Arg>
+        <Name>Limit</Name>
+        <Description>the limit value.</Description>
+        <Type>number</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>4294967295</Default>
+          <DataType>number</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.MultilineEditTraitSetMaxLines</Name>
+      <Description>Sets the max lines for the multiline edit trait.</Description>
+      <ReturnValueType></ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>pTraitMultilineEdit</Name>
+        <Description>the trait value.</Description>
+        <Type>number</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>pTraitMultilineEdit</Default>
+          <DataType>number</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+	  <Arg>
+        <Name>MaxLines</Name>
+        <Description>the max lines value.</Description>
+        <Type>number</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>4</Default>
+          <DataType>number</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.CreateMaskedEditTrait</Name>
+      <Description>Creates the masked edit trait of the ListCtrl object.</Description>
+      <ReturnValueType DefaultName="pTraitMaskedEdit">number</ReturnValueType>
+      <Arguments>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.MaskedEditTraitSetSingleClickEdit</Name>
+      <Description>Sets single click edit for the masked edit trait.</Description>
+      <ReturnValueType></ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>pTraitMaskedEdit</Name>
+        <Description>the trait value.</Description>
+        <Type>number</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>pTraitMaskedEdit</Default>
+          <DataType>number</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+	  <Arg>
+        <Name>SingleClick</Name>
+        <Description>the single click status.</Description>
+        <Type>boolean</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>false</Default>
+          <DataType>boolean</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.MaskedEditSetMask</Name>
+      <Description>Sets the mask of the masked edit trait.</Description>
+      <ReturnValueType></ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>pTraitMaskedEdit</Name>
+        <Description>the trait value.</Description>
+        <Type>number</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>pTraitMaskedEdit</Default>
+          <DataType>number</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+	  <Arg>
+        <Name>Mask</Name>
+        <Description>the text value to set mask.</Description>
+        <Type>string</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>"###"</Default>
+          <DataType>string</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.MaskedEditGetMask</Name>
+      <Description>Gets the mask of the masked edit trait.</Description>
+      <ReturnValueType>string</ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>pTraitMaskedEdit</Name>
+        <Description>the trait value.</Description>
+        <Type>number</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>pTraitMaskedEdit</Default>
+          <DataType>number</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.MaskedEditSetPromptSymbol</Name>
+      <Description>Sets the prompt symbol of the masked edit trait.</Description>
+      <ReturnValueType></ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>pTraitMaskedEdit</Name>
+        <Description>the trait value.</Description>
+        <Type>number</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>pTraitMaskedEdit</Default>
+          <DataType>number</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+	  <Arg>
+        <Name>PromptSymbol</Name>
+        <Description>the character value to set prompt symbol.</Description>
+        <Type>string</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>"_"</Default>
+          <DataType>string</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.MaskedEditGetPromptSymbol</Name>
+      <Description>Gets the prompt symbol of the masked edit trait.</Description>
+      <ReturnValueType>string</ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>pTraitMaskedEdit</Name>
+        <Description>the trait value.</Description>
+        <Type>number</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>pTraitMaskedEdit</Default>
+          <DataType>number</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.CreateEditTrait</Name>
+      <Description>Creates the edit trait of the ListCtrl object.</Description>
+      <ReturnValueType DefaultName="pTraitEdit">number</ReturnValueType>
+      <Arguments>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.EditTraitSetLimitText</Name>
+      <Description>Sets the limit text of the edit trait.</Description>
+      <ReturnValueType></ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>pTraitEdit</Name>
+        <Description>the trait value.</Description>
+        <Type>number</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>pTraitEdit</Default>
+          <DataType>number</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+	  <Arg>
+        <Name>Limit</Name>
+        <Description>the limit value to set.</Description>
+        <Type>number</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>4294967295</Default>
+          <DataType>number</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.EditTraitGetLimitText</Name>
+      <Description>Gets the limit text of the edit trait.</Description>
+      <ReturnValueType>number</ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>pTraitEdit</Name>
+        <Description>the trait value.</Description>
+        <Type>number</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>pTraitEdit</Default>
+          <DataType>number</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.EditTraitSetSingleClickEdit</Name>
+      <Description>Sets single click edit for the edit trait.</Description>
+      <ReturnValueType></ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>pTraitEdit</Name>
+        <Description>the trait value.</Description>
+        <Type>number</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>pTraitEdit</Default>
+          <DataType>number</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+	  <Arg>
+        <Name>SingleClick</Name>
+        <Description>the single click status.</Description>
+        <Type>boolean</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>false</Default>
+          <DataType>boolean</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.CreateDateTimeTrait</Name>
+      <Description>Creates the datetime trait of the ListCtrl object.</Description>
+      <ReturnValueType DefaultName="pTraitDateTime">number</ReturnValueType>
+      <Arguments>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.DateTimeSetFormat</Name>
+      <Description>Sets the time format of the datetime trait.</Description>
+      <ReturnValueType></ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>pTraitDateTime</Name>
+        <Description>the trait value.</Description>
+        <Type>number</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>pTraitDateTime</Default>
+          <DataType>number</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+	  <Arg>
+        <Name>strFormat</Name>
+        <Description>the time format.</Description>
+        <Type>string</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>"dddd, dd MMMM, yyyy"</Default>
+          <DataType>string</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.DateTimeGetFormat</Name>
+      <Description>Gets the time format of the datetime trait.</Description>
+      <ReturnValueType>string</ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>pTraitDateTime</Name>
+        <Description>the trait value.</Description>
+        <Type>number</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>pTraitDateTime</Default>
+          <DataType>number</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.DateTimeSetSingleClickEdit</Name>
+      <Description>Sets single click edit for the datetime trait.</Description>
+      <ReturnValueType></ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>pTraitDateTime</Name>
+        <Description>the trait value.</Description>
+        <Type>number</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>pTraitDateTime</Default>
+          <DataType>number</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+	  <Arg>
+        <Name>SingleClick</Name>
+        <Description>the single click status.</Description>
+        <Type>boolean</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>false</Default>
+          <DataType>boolean</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.DateTimeSetTime</Name>
+      <Description>Sets the time of the datetime trait.</Description>
+      <ReturnValueType></ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>pTraitDateTime</Name>
+        <Description>the trait value.</Description>
+        <Type>number</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>pTraitDateTime</Default>
+          <DataType>number</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+	  <Arg>
+        <Name>Year</Name>
+        <Description>the year.</Description>
+        <Type>number</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>2013</Default>
+          <DataType>number</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+	  <Arg>
+        <Name>Month</Name>
+        <Description>the month of the year.</Description>
+        <Type>number</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>1</Default>
+          <DataType>number</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+	  <Arg>
+        <Name>Day</Name>
+        <Description>the day of the month.</Description>
+        <Type>number</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>1</Default>
+          <DataType>number</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.DateTimeSetToggleSelection</Name>
+      <Description>Sets the toggle selection of the datetime trait.</Description>
+      <ReturnValueType></ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>pTraitDateTime</Name>
+        <Description>the trait value.</Description>
+        <Type>number</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>pTraitDateTime</Default>
+          <DataType>number</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+	  <Arg>
+        <Name>ToggleSelection</Name>
+        <Description>the toggle selection value.</Description>
+        <Type>boolean</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>true</Default>
+          <DataType>boolean</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.CreateHyperLinkTrait</Name>
+      <Description>Creates the hyperlink trait of the ListCtrl object.</Description>
+      <ReturnValueType DefaultName="pTraitHyperLink">number</ReturnValueType>
+      <Arguments>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.HyperLinkSetSingleClickEdit</Name>
+      <Description>Sets single click edit for the hyperlink trait.</Description>
+      <ReturnValueType></ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>pTraitHyperLink</Name>
+        <Description>the trait value.</Description>
+        <Type>number</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>pTraitHyperLink</Default>
+          <DataType>number</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+	  <Arg>
+        <Name>SingleClick</Name>
+        <Description>the single click status.</Description>
+        <Type>boolean</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>false</Default>
+          <DataType>boolean</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.HyperLinkSetShellApplication</Name>
+      <Description>Sets shell application of the hyperlink trait.</Description>
+      <ReturnValueType></ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>pTraitHyperLink</Name>
+        <Description>the trait value.</Description>
+        <Type>number</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>pTraitHyperLink</Default>
+          <DataType>number</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+	  <Arg>
+        <Name>Application</Name>
+        <Description>the path of the Application.</Description>
+        <Type>string</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>"MyApp.exe"</Default>
+          <DataType>string</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.HyperLinkSetShellFilePrefix</Name>
+      <Description>Sets the shell file prefix of the hyperlink trait.</Description>
+      <ReturnValueType></ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>pTraitHyperLink</Name>
+        <Description>the trait value.</Description>
+        <Type>number</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>pTraitHyperLink</Default>
+          <DataType>number</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+	  <Arg>
+        <Name>ShellFilePrefix</Name>
+        <Description>the shell file prefix value.</Description>
+        <Type>string</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>"http://google.com/?q="</Default>
+          <DataType>string</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.HyperLinkSetShellFileSuffix</Name>
+      <Description>Sets the shell file suffix of the hyperlink trait.</Description>
+      <ReturnValueType></ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>pTraitHyperLink</Name>
+        <Description>the trait value.</Description>
+        <Type>number</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>pTraitHyperLink</Default>
+          <DataType>number</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+	  <Arg>
+        <Name>ShellFileSuffix</Name>
+        <Description>the shell file suffix value.</Description>
+        <Type>string</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>""</Default>
+          <DataType>string</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.HyperLinkGetShellFilePrefix</Name>
+      <Description>Gets the shell file prefix of the hyperlink trait.</Description>
+      <ReturnValueType>string</ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>pTraitHyperLink</Name>
+        <Description>the trait value.</Description>
+        <Type>number</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>pTraitHyperLink</Default>
+          <DataType>number</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.HyperLinkGetShellFileSuffix</Name>
+      <Description>Gets the shell file suffix of the hyperlink trait.</Description>
+      <ReturnValueType>string</ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>pTraitHyperLink</Name>
+        <Description>the trait value.</Description>
+        <Type>number</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>pTraitHyperLink</Default>
+          <DataType>number</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.SelectRow</Name>
+      <Description>Selects/Deselects the row of a ListCtrl object.</Description>
+      <ReturnValueType></ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>ObjectName</Name>
+        <Description>The name of the object.</Description>
+        <Type>string</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default></Default>
+          <DataType>pluginobject</DataType>
+          <Constraints>IR_LISTCTRL_OBJECT</Constraints>
+        </EasyMode>
+      </Arg>
+      <Arg>
+        <Name>Row</Name>
+        <Description>The row number.</Description>
+        <Type>number</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>0</Default>
+          <DataType>number</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+      <Arg>
+        <Name>Select</Name>
+        <Description>set true to select/deselect the row.</Description>
+        <Type>boolean</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>true</Default>
+          <DataType>boolean</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.SelectAllRows</Name>
+      <Description>Selects/Deselects the all rows of a ListCtrl object.</Description>
+      <ReturnValueType></ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>ObjectName</Name>
+        <Description>The name of the object.</Description>
+        <Type>string</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default></Default>
+          <DataType>pluginobject</DataType>
+          <Constraints>IR_LISTCTRL_OBJECT</Constraints>
+        </EasyMode>
+      </Arg>
+      <Arg>
+        <Name>Select</Name>
+        <Description>set true to select/deselect the row.</Description>
+        <Type>boolean</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>true</Default>
+          <DataType>boolean</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.SetCellBackColor</Name>
+      <Description>Sets the back color of the ListCtrl object's cell.</Description>
+      <ReturnValueType></ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>ObjectName</Name>
+        <Description>The name of the object.</Description>
+        <Type>string</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default></Default>
+          <DataType>pluginobject</DataType>
+          <Constraints>IR_LISTCTRL_OBJECT</Constraints>
+        </EasyMode>
+      </Arg>
+      <Arg>
+        <Name>Color</Name>
+        <Description>The color value.</Description>
+        <Type>color</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>0</Default>
+          <DataType>color</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.SetCellTextColor</Name>
+      <Description>Sets the text color of the ListCtrl object's cell.</Description>
+      <ReturnValueType></ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>ObjectName</Name>
+        <Description>The name of the object.</Description>
+        <Type>string</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default></Default>
+          <DataType>pluginobject</DataType>
+          <Constraints>IR_LISTCTRL_OBJECT</Constraints>
+        </EasyMode>
+      </Arg>
+      <Arg>
+        <Name>Color</Name>
+        <Description>The color value.</Description>
+        <Type>color</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>0</Default>
+          <DataType>color</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.SetTooltipTitle</Name>
+      <Description>Sets the title of the ListCtrl object's tooltip.</Description>
+      <ReturnValueType></ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>ObjectName</Name>
+        <Description>The name of the object.</Description>
+        <Type>string</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default></Default>
+          <DataType>pluginobject</DataType>
+          <Constraints>IR_LISTCTRL_OBJECT</Constraints>
+        </EasyMode>
+      </Arg>
+      <Arg>
+        <Name>Title</Name>
+        <Description>The title value.</Description>
+        <Type>string</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>"New Title"</Default>
+          <DataType>string</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.SetTooltipText</Name>
+      <Description>Sets the text of the ListCtrl object's tooltip.</Description>
+      <ReturnValueType></ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>ObjectName</Name>
+        <Description>The name of the object.</Description>
+        <Type>string</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default></Default>
+          <DataType>pluginobject</DataType>
+          <Constraints>IR_LISTCTRL_OBJECT</Constraints>
+        </EasyMode>
+      </Arg>
+      <Arg>
+        <Name>Text</Name>
+        <Description>The text value of the tooltip.</Description>
+        <Type>string</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>"New Text"</Default>
+          <DataType>string</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.SetBkColor</Name>
+      <Description>Sets the background color of the ListCtrl object.</Description>
+      <ReturnValueType></ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>ObjectName</Name>
+        <Description>The name of the object.</Description>
+        <Type>string</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default></Default>
+          <DataType>pluginobject</DataType>
+          <Constraints>IR_LISTCTRL_OBJECT</Constraints>
+        </EasyMode>
+      </Arg>
+      <Arg>
+        <Name>Color</Name>
+        <Description>The color value of the object.</Description>
+        <Type>color</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>0</Default>
+          <DataType>color</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.GetBkColor</Name>
+      <Description>Gets the color of the ListCtrl object's background.</Description>
+      <ReturnValueType>number</ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>ObjectName</Name>
+        <Description>The name of the object.</Description>
+        <Type>string</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default></Default>
+          <DataType>pluginobject</DataType>
+          <Constraints>IR_LISTCTRL_OBJECT</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.IsCellEditorOpen</Name>
+      <Description>Returns true if a cell editor is open or false if it is not.</Description>
+      <ReturnValueType>boolean</ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>ObjectName</Name>
+        <Description>The name of the object.</Description>
+        <Type>string</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default></Default>
+          <DataType>pluginobject</DataType>
+          <Constraints>IR_LISTCTRL_OBJECT</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.RedrawItems</Name>
+      <Description>Redraws from the first to last items of the ListCtrl object.</Description>
+      <ReturnValueType></ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>ObjectName</Name>
+        <Description>The name of the object.</Description>
+        <Type>string</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default></Default>
+          <DataType>pluginobject</DataType>
+          <Constraints>IR_LISTCTRL_OBJECT</Constraints>
+        </EasyMode>
+      </Arg>
+	  <Arg>
+        <Name>First</Name>
+        <Description>The first item to redraw.</Description>
+        <Type>number</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>0</Default>
+          <DataType>number</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+	  <Arg>
+        <Name>Last</Name>
+        <Description>The last item to redraw.</Description>
+        <Type>number</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>1</Default>
+          <DataType>number</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.SetColumnWidth</Name>
+      <Description>Sets the width of the ListCtrl object's column.</Description>
+      <ReturnValueType></ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>ObjectName</Name>
+        <Description>The name of the object.</Description>
+        <Type>string</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default></Default>
+          <DataType>pluginobject</DataType>
+          <Constraints>IR_LISTCTRL_OBJECT</Constraints>
+        </EasyMode>
+      </Arg>
+	  <Arg>
+        <Name>Col</Name>
+        <Description>The column number to set the width.</Description>
+        <Type>number</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>0</Default>
+          <DataType>number</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+	  <Arg>
+        <Name>Width</Name>
+        <Description>The width value.</Description>
+        <Type>number</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>100</Default>
+          <DataType>number</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.SetFocusRow</Name>
+      <Description>Sets the focus of the ListCtrl object's row.</Description>
+      <ReturnValueType></ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>ObjectName</Name>
+        <Description>The name of the object.</Description>
+        <Type>string</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default></Default>
+          <DataType>pluginobject</DataType>
+          <Constraints>IR_LISTCTRL_OBJECT</Constraints>
+        </EasyMode>
+      </Arg>
+	  <Arg>
+        <Name>Row</Name>
+        <Description>The row number.</Description>
+        <Type>number</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>0</Default>
+          <DataType>number</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.SetFocusCell</Name>
+      <Description>Sets the focus of the ListCtrl object's cell.</Description>
+      <ReturnValueType></ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>ObjectName</Name>
+        <Description>The name of the object.</Description>
+        <Type>string</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default></Default>
+          <DataType>pluginobject</DataType>
+          <Constraints>IR_LISTCTRL_OBJECT</Constraints>
+        </EasyMode>
+      </Arg>
+	  <Arg>
+        <Name>Cell</Name>
+        <Description>The cell number.</Description>
+        <Type>number</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>0</Default>
+          <DataType>number</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+	  <Arg>
+        <Name>Redraw</Name>
+        <Description>The redraw value.</Description>
+        <Type>boolean</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>false</Default>
+          <DataType>boolean</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.SetHotItem</Name>
+      <Description>Sets the hot of the ListCtrl object's item.</Description>
+      <ReturnValueType></ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>ObjectName</Name>
+        <Description>The name of the object.</Description>
+        <Type>string</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default></Default>
+          <DataType>pluginobject</DataType>
+          <Constraints>IR_LISTCTRL_OBJECT</Constraints>
+        </EasyMode>
+      </Arg>
+	  <Arg>
+        <Name>Index</Name>
+        <Description>The index number to set hot item.</Description>
+        <Type>number</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>0</Default>
+          <DataType>number</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.SetItemData</Name>
+      <Description>Sets the data of the ListCtrl object's item.</Description>
+      <ReturnValueType></ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>ObjectName</Name>
+        <Description>The name of the object.</Description>
+        <Type>string</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default></Default>
+          <DataType>pluginobject</DataType>
+          <Constraints>IR_LISTCTRL_OBJECT</Constraints>
+        </EasyMode>
+      </Arg>
+	  <Arg>
+        <Name>Item</Name>
+        <Description>The item number to set the data.</Description>
+        <Type>number</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>0</Default>
+          <DataType>number</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+	  <Arg>
+        <Name>Data</Name>
+        <Description>The data value.</Description>
+        <Type>number</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>0</Default>
+          <DataType>number</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.GetItemData</Name>
+      <Description>Gets the data of the ListCtrl object's item.</Description>
+      <ReturnValueType>number</ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>ObjectName</Name>
+        <Description>The name of the object.</Description>
+        <Type>string</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default></Default>
+          <DataType>pluginobject</DataType>
+          <Constraints>IR_LISTCTRL_OBJECT</Constraints>
+        </EasyMode>
+      </Arg>
+	  <Arg>
+        <Name>Item</Name>
+        <Description>The item number to get the data.</Description>
+        <Type>number</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>0</Default>
+          <DataType>number</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.EnableTooltips</Name>
+      <Description>Enables/Disables the tooltips of the ListCtrl object.</Description>
+      <ReturnValueType></ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>ObjectName</Name>
+        <Description>The name of the object.</Description>
+        <Type>string</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default></Default>
+          <DataType>pluginobject</DataType>
+          <Constraints>IR_LISTCTRL_OBJECT</Constraints>
+        </EasyMode>
+      </Arg>
+	  <Arg>
+        <Name>Enable</Name>
+        <Description>set true to enable the tooltips.</Description>
+        <Type>boolean</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>true</Default>
+          <DataType>boolean</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.SetFont</Name>
+      <Description>Sets the font of the ListCtrl object.</Description>
+      <ReturnValueType></ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>ObjectName</Name>
+        <Description>The name of the object.</Description>
+        <Type>string</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default></Default>
+          <DataType>pluginobject</DataType>
+          <Constraints>IR_LISTCTRL_OBJECT</Constraints>
+        </EasyMode>
+      </Arg>
+	  <Arg>
+        <Name>FontSize</Name>
+        <Description>The size of the font object.</Description>
+        <Type>number</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>14</Default>
+          <DataType>number</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+	  <Arg>
+        <Name>Weigth</Name>
+        <Description>the weigth of the font object.</Description>
+        <Type>number</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>FW_NORMAL</Default>
+          <DataType>combo</DataType>
+          <Constraints>FW_DONTCARE,FW_THIN,FW_EXTRALIGHT,FW_LIGHT,FW_NORMAL,FW_SEMIBOLD,FW_BOLD,FW_EXTRABOLD,FW_HEAVY</Constraints>
+        </EasyMode>
+      </Arg>
+	  <Arg>
+        <Name>Italic</Name>
+        <Description>set true to italic font object.</Description>
+        <Type>boolean</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>false</Default>
+          <DataType>boolean</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+	  <Arg>
+        <Name>Underline</Name>
+        <Description>set true to underline font object.</Description>
+        <Type>boolean</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>false</Default>
+          <DataType>boolean</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+	  <Arg>
+        <Name>StrikeOut</Name>
+        <Description>set true to strikeout font object.</Description>
+        <Type>boolean</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>false</Default>
+          <DataType>boolean</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+	  <Arg>
+        <Name>FontName</Name>
+        <Description>the name of the font object.</Description>
+        <Type>string</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>"Arial"</Default>
+          <DataType>string</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+	  <Arg>
+        <Name>Charset</Name>
+        <Description>the charset of the font object.</Description>
+        <Type>number</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>DEFAULT_CHARSET</Default>
+          <DataType>combo</DataType>
+          <Constraints>ANSI_CHARSET,DEFAULT_CHARSET,BALTIC_CHARSET,CHINESEBIG5_CHARSET,EASTEUROPE_CHARSET,GB2312_CHARSET,GREEK_CHARSET,HANGUL_CHARSET,MAC_CHARSET,OEM_CHARSET,RUSSIAN_CHARSET,SHIFTJIS_CHARSET,SYMBOL_CHARSET,TURKISH_CHARSET</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.FindItem</Name>
+      <Description>Finds the item in the ListCtrl object.</Description>
+      <ReturnValueType>number</ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>ObjectName</Name>
+        <Description>The name of the object.</Description>
+        <Type>string</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default></Default>
+          <DataType>pluginobject</DataType>
+          <Constraints>IR_LISTCTRL_OBJECT</Constraints>
+        </EasyMode>
+      </Arg>
+	  <Arg>
+        <Name>Text</Name>
+        <Description>the text value to find item.</Description>
+        <Type>string</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>"Item1"</Default>
+          <DataType>string</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+	  <Arg>
+        <Name>nStart</Name>
+        <Description>the first index to find item.</Description>
+        <Type>number</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>-1</Default>
+          <DataType>number</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.EnsureVisible</Name>
+      <Description>Ensures the visible item of the ListCtrl object.</Description>
+      <ReturnValueType></ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>ObjectName</Name>
+        <Description>The name of the object.</Description>
+        <Type>string</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default></Default>
+          <DataType>pluginobject</DataType>
+          <Constraints>IR_LISTCTRL_OBJECT</Constraints>
+        </EasyMode>
+      </Arg>
+	  <Arg>
+        <Name>Item</Name>
+        <Description>the item number.</Description>
+        <Type>number</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>0</Default>
+          <DataType>number</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+	  <Arg>
+        <Name>Partial</Name>
+        <Description>the partial value.</Description>
+        <Type>boolean</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>true</Default>
+          <DataType>boolean</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.UpdateWindow</Name>
+      <Description>Updates the ListCtrl object's window.</Description>
+      <ReturnValueType></ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>ObjectName</Name>
+        <Description>The name of the object.</Description>
+        <Type>string</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default></Default>
+          <DataType>pluginobject</DataType>
+          <Constraints>IR_LISTCTRL_OBJECT</Constraints>
+        </EasyMode>
+      </Arg>
+	  <Arg>
+        <Name>Redraw</Name>
+        <Description>the redraw value.</Description>
+        <Type>boolean</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>false</Default>
+          <DataType>boolean</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.GetSelectedItems</Name>
+      <Description>Gets the selected items of the ListCtrl object.</Description>
+      <ReturnValueType>table</ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>ObjectName</Name>
+        <Description>The name of the object.</Description>
+        <Type>string</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default></Default>
+          <DataType>pluginobject</DataType>
+          <Constraints>IR_LISTCTRL_OBJECT</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.GetCheckedItems</Name>
+      <Description>Gets the checked items of the ListCtrl object.</Description>
+      <ReturnValueType>table</ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>ObjectName</Name>
+        <Description>The name of the object.</Description>
+        <Type>string</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default></Default>
+          <DataType>pluginobject</DataType>
+          <Constraints>IR_LISTCTRL_OBJECT</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.GetSelectedCount</Name>
+      <Description>Gets the selected count of the ListCtrl object's items.</Description>
+      <ReturnValueType>number</ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>ObjectName</Name>
+        <Description>The name of the object.</Description>
+        <Type>string</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default></Default>
+          <DataType>pluginobject</DataType>
+          <Constraints>IR_LISTCTRL_OBJECT</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.IsItemSelected</Name>
+      <Description>Returns true if a specific item is selected, or false if it's not selected.</Description>
+      <ReturnValueType>boolean</ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>ObjectName</Name>
+        <Description>The name of the object.</Description>
+        <Type>string</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default></Default>
+          <DataType>pluginobject</DataType>
+          <Constraints>IR_LISTCTRL_OBJECT</Constraints>
+        </EasyMode>
+      </Arg>
+	  <Arg>
+        <Name>Item</Name>
+        <Description>The item number.</Description>
+        <Type>number</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>0</Default>
+          <DataType>number</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.EnsureColumnVisible</Name>
+      <Description>Ensures the visible column of the ListCtrl object.</Description>
+      <ReturnValueType></ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>ObjectName</Name>
+        <Description>The name of the object.</Description>
+        <Type>string</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default></Default>
+          <DataType>pluginobject</DataType>
+          <Constraints>IR_LISTCTRL_OBJECT</Constraints>
+        </EasyMode>
+      </Arg>
+	  <Arg>
+        <Name>Column</Name>
+        <Description>the column number.</Description>
+        <Type>number</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>0</Default>
+          <DataType>number</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+	  <Arg>
+        <Name>Partial</Name>
+        <Description>the partial value.</Description>
+        <Type>boolean</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>true</Default>
+          <DataType>boolean</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.EditCell</Name>
+      <Description>Edits the cell of the ListCtrl object.</Description>
+      <ReturnValueType></ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>ObjectName</Name>
+        <Description>The name of the object.</Description>
+        <Type>string</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default></Default>
+          <DataType>pluginobject</DataType>
+          <Constraints>IR_LISTCTRL_OBJECT</Constraints>
+        </EasyMode>
+      </Arg>
+	  <Arg>
+        <Name>Row</Name>
+        <Description>the row number.</Description>
+        <Type>number</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>0</Default>
+          <DataType>number</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+	  <Arg>
+        <Name>Column</Name>
+        <Description>the column number.</Description>
+        <Type>number</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>0</Default>
+          <DataType>number</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.ShowColumn</Name>
+      <Description>Shows the column of the ListCtrl object.</Description>
+      <ReturnValueType></ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>ObjectName</Name>
+        <Description>The name of the object.</Description>
+        <Type>string</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default></Default>
+          <DataType>pluginobject</DataType>
+          <Constraints>IR_LISTCTRL_OBJECT</Constraints>
+        </EasyMode>
+      </Arg>
+	  <Arg>
+        <Name>Column</Name>
+        <Description>the column number.</Description>
+        <Type>number</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>0</Default>
+          <DataType>number</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+	  <Arg>
+        <Name>bShow</Name>
+        <Description>to show set true.</Description>
+        <Type>boolean</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>true</Default>
+          <DataType>boolean</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.IsColumnVisible</Name>
+      <Description>Returns true if a specific column is visible, or false if it's not visible.</Description>
+      <ReturnValueType>boolean</ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>ObjectName</Name>
+        <Description>The name of the object.</Description>
+        <Type>string</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default></Default>
+          <DataType>pluginobject</DataType>
+          <Constraints>IR_LISTCTRL_OBJECT</Constraints>
+        </EasyMode>
+      </Arg>
+	  <Arg>
+        <Name>Column</Name>
+        <Description>the column number.</Description>
+        <Type>number</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>0</Default>
+          <DataType>number</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.MoveFocusCell</Name>
+      <Description>Shifts the cell focus left or right in the same row.</Description>
+      <ReturnValueType></ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>ObjectName</Name>
+        <Description>The name of the object.</Description>
+        <Type>string</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default></Default>
+          <DataType>pluginobject</DataType>
+          <Constraints>IR_LISTCTRL_OBJECT</Constraints>
+        </EasyMode>
+      </Arg>
+	  <Arg>
+        <Name>bMoveRight</Name>
+        <Description>the move state.</Description>
+        <Type>boolean</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>true</Default>
+          <DataType>boolean</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.CopyToClipBoard</Name>
+      <Description>Copys the current cell text to the clipboard.</Description>
+      <ReturnValueType></ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>ObjectName</Name>
+        <Description>The name of the object.</Description>
+        <Type>string</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default></Default>
+          <DataType>pluginobject</DataType>
+          <Constraints>IR_LISTCTRL_OBJECT</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.GroupByColumn</Name>
+      <Description>Groups the all items by the column.</Description>
+      <ReturnValueType></ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>ObjectName</Name>
+        <Description>The name of the object.</Description>
+        <Type>string</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default></Default>
+          <DataType>pluginobject</DataType>
+          <Constraints>IR_LISTCTRL_OBJECT</Constraints>
+        </EasyMode>
+      </Arg>
+	  <Arg>
+        <Name>Column</Name>
+        <Description>the column number.</Description>
+        <Type>number</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>0</Default>
+          <DataType>number</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.IsGroupViewEnabled</Name>
+      <Description>Returns true if the groupview is visible, or false if it's not visible.</Description>
+      <ReturnValueType>boolean</ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>ObjectName</Name>
+        <Description>The name of the object.</Description>
+        <Type>string</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default></Default>
+          <DataType>pluginobject</DataType>
+          <Constraints>IR_LISTCTRL_OBJECT</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.IsGroupStateEnabled</Name>
+      <Description>Checks if it is possible to modify the collapse state of a group. This is only possible in Windows Vista or later.</Description>
+      <ReturnValueType>boolean</ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>ObjectName</Name>
+        <Description>The name of the object.</Description>
+        <Type>string</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default></Default>
+          <DataType>pluginobject</DataType>
+          <Constraints>IR_LISTCTRL_OBJECT</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.RemoveAllGroups</Name>
+      <Description>Removes the all groups on the ListCtrl object.</Description>
+      <ReturnValueType></ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>ObjectName</Name>
+        <Description>The name of the object.</Description>
+        <Type>string</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default></Default>
+          <DataType>pluginobject</DataType>
+          <Constraints>IR_LISTCTRL_OBJECT</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.GetGroupHeader</Name>
+      <Description>Retrieves the group header title of a group.</Description>
+      <ReturnValueType>boolean</ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>ObjectName</Name>
+        <Description>The name of the object.</Description>
+        <Type>string</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default></Default>
+          <DataType>pluginobject</DataType>
+          <Constraints>IR_LISTCTRL_OBJECT</Constraints>
+        </EasyMode>
+      </Arg>
+	  <Arg>
+        <Name>GroupID</Name>
+        <Description>the group ID.</Description>
+        <Type>number</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>1</Default>
+          <DataType>number</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.CheckEntireGroup</Name>
+      <Description>Update the checkbox of the label column (first column)</Description>
+      <ReturnValueType></ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>ObjectName</Name>
+        <Description>The name of the object.</Description>
+        <Type>string</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default></Default>
+          <DataType>pluginobject</DataType>
+          <Constraints>IR_LISTCTRL_OBJECT</Constraints>
+        </EasyMode>
+      </Arg>
+	  <Arg>
+        <Name>GroupID</Name>
+        <Description>the group ID.</Description>
+        <Type>number</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>1</Default>
+          <DataType>number</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+	  <Arg>
+        <Name>Checked</Name>
+        <Description>the check state.</Description>
+        <Type>boolean</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>true</Default>
+          <DataType>boolean</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.ExpandAllGroups</Name>
+      <Description>Expands all groups</Description>
+      <ReturnValueType></ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>ObjectName</Name>
+        <Description>The name of the object.</Description>
+        <Type>string</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default></Default>
+          <DataType>pluginobject</DataType>
+          <Constraints>IR_LISTCTRL_OBJECT</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.CollapseAllGroups</Name>
+      <Description>Collapses all groups</Description>
+      <ReturnValueType></ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>ObjectName</Name>
+        <Description>The name of the object.</Description>
+        <Type>string</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default></Default>
+          <DataType>pluginobject</DataType>
+          <Constraints>IR_LISTCTRL_OBJECT</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.DeleteEntireGroup</Name>
+      <Description>Deletes the group and its items of the ListCtrl object.</Description>
+      <ReturnValueType></ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>ObjectName</Name>
+        <Description>The name of the object.</Description>
+        <Type>string</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default></Default>
+          <DataType>pluginobject</DataType>
+          <Constraints>IR_LISTCTRL_OBJECT</Constraints>
+        </EasyMode>
+      </Arg>
+	  <Arg>
+        <Name>GroupID</Name>
+        <Description>the group ID.</Description>
+        <Type>number</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>1</Default>
+          <DataType>number</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.SortColumn</Name>
+      <Description>Changes the row sorting in regard to the specified column.</Description>
+      <ReturnValueType>boolean</ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>ObjectName</Name>
+        <Description>The name of the object.</Description>
+        <Type>string</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default></Default>
+          <DataType>pluginobject</DataType>
+          <Constraints>IR_LISTCTRL_OBJECT</Constraints>
+        </EasyMode>
+      </Arg>
+	  <Arg>
+        <Name>Column</Name>
+        <Description>The index of the column.</Description>
+        <Type>number</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>0</Default>
+          <DataType>number</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+	  <Arg>
+        <Name>Ascending</Name>
+        <Description>Perform sorting in ascending or descending order.</Description>
+        <Type>boolean</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>true</Default>
+          <DataType>boolean</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.SetSortArrow</Name>
+      <Description>Puts a sort-icon in the column header of the specified column.</Description>
+      <ReturnValueType></ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>ObjectName</Name>
+        <Description>The name of the object.</Description>
+        <Type>string</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default></Default>
+          <DataType>pluginobject</DataType>
+          <Constraints>IR_LISTCTRL_OBJECT</Constraints>
+        </EasyMode>
+      </Arg>
+	  <Arg>
+        <Name>Column</Name>
+        <Description>The index of the column.</Description>
+        <Type>number</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>0</Default>
+          <DataType>number</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+	  <Arg>
+        <Name>Ascending</Name>
+        <Description>Should the arrow be up or down.</Description>
+        <Type>boolean</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>true</Default>
+          <DataType>boolean</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+      <Name>ListCtrl.GetColumnTraitState</Name>
+      <Description>Maintaining column visible state, etc.(Returning values: bSortable, bEditable, nMaxWidth, nMinWidth, nOrgPosition, nOrgWidth, bResizable, bVisible)</Description>
+      <ReturnValueType>table</ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>ColumnTrait</Name>
+        <Description>The variable of trait.</Description>
+        <Type>pTrait</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>pTrait</Default>
+          <DataType>number</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+   <Name>ListCtrl.SetItemCount</Name>
+      <Description>Prepares a list view control for adding a large number of items.</Description>
+      <ReturnValueType></ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>ObjectName</Name>
+        <Description>The name of the object.</Description>
+        <Type>string</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default></Default>
+          <DataType>pluginobject</DataType>
+          <Constraints>IR_LISTCTRL_OBJECT</Constraints>
+        </EasyMode>
+      </Arg>
+	  <Arg>
+        <Name>nItems</Name>
+        <Description>Number of items that the control will ultimately contain.</Description>
+        <Type>number</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>100</Default>
+          <DataType>number</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+   <Action>
+   <Name>ListCtrl.SetEmptyMarkupText</Name>
+      <Description>Updates the markup text displayed when the list control is empty.</Description>
+      <ReturnValueType></ReturnValueType>
+      <Arguments>
+         <Arg>
+        <Name>ObjectName</Name>
+        <Description>The name of the object.</Description>
+        <Type>string</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default></Default>
+          <DataType>pluginobject</DataType>
+          <Constraints>IR_LISTCTRL_OBJECT</Constraints>
+        </EasyMode>
+      </Arg>
+	  <Arg>
+        <Name>MarkupText</Name>
+        <Description>Text to display when list control is empty.</Description>
+        <Type>string</Type>
+        <Default/>
+        <Required>1</Required>
+        <EasyMode>
+          <Default>"New Text"</Default>
+          <DataType>string</DataType>
+          <Constraints>none</Constraints>
+        </EasyMode>
+      </Arg>
+      </Arguments>
+   </Action>
+</ActionTemplates>
