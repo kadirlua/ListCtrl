@@ -21,38 +21,6 @@ http://www.indigorose.com
 #define IR_PLUGIN_MAX_FORMATTED_ERROR 1024
 #define IR_SDK_VERSION 2
 
-#ifdef USE_PLUGIN_LIB
-
-
-#if _MSC_VER == 1200
- #define LIB_VS_VERSION "vc60"
-#elif _MSC_VER == 1400
- #define LIB_VS_VERSION "vc80"
-#elif _MSC_VER == 1500
- #define LIB_VS_VERSION "vc90"
-#elif _MSC_VER == 1600
-#define LIB_VS_VERSION "vc10"
-#else
- #define LIB_VS_VERSION ""
-#endif
-
-#if defined(_DEBUG)
-#define LIB_DEBUG "D"
-#else
-#define LIB_DEBUG ""
-#endif
-
-#ifdef _M_X64
-	#define LIB_PLATFORM "x64"
-#else
-	#define LIB_PLATFORM ""
-#endif
-
-
-#pragma comment(lib, "IRPluginHelperFunctions" LIB_VS_VERSION LIB_DEBUG LIB_PLATFORM ".lib")
-#pragma message("** Linking with IRPluginHelperFunctions" LIB_VS_VERSION LIB_DEBUG LIB_PLATFORM ".lib")
-#endif
-
 #ifdef LUA_VERSION
 
 void IRLUA_PLUGIN_SetLastError(lua_State *luaState,int nCode);

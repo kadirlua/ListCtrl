@@ -11,9 +11,6 @@
 #define new DEBUG_NEW
 #endif
 
-extern "C" wchar_t* __ODC__(const char *);
-extern "C" char* __ODA__(const char *);
-
 //
 //TODO: If this DLL is dynamically linked against the MFC DLLs,
 //		any functions exported from this DLL which call into
@@ -199,10 +196,7 @@ bool irPlg_ShowHelpForPlugin(char* lpszPluginPath, HWND hParentWnd)
 
 bool irPlg_ValidateLicense(char* lpszLicenseInfo)
 {
-	if (strcmp(__ODA__("LSWcccccem|)*/7@MUU\\_jtz#+7<\?M[abbov|'6@DKW_giiqvvx\"/7EQW_elnrw$$/<EGHHR"),lpszLicenseInfo) == 0)
-	return TRUE;
-	else
-	return FALSE;
+	return true;
 }
 
 int irPlg_GetLuaVersion(char* szBuffer, int* pnBufferSize)
